@@ -18,22 +18,28 @@ In this step, we will use [AWS CLI](https://docs.aws.amazon.com/pdfs/cli/latest/
 
 - Create key pair
 
-    A key pair, consisting of a public key and a private key, is a set of security credentials that are used to prove your identity when connecting to an Amazon EC2 instance.
+A key pair, consisting of a public key and a private key, is a set of security credentials that are used to prove your identity when connecting to an Amazon EC2 instance.
       
-    To create the key pair for instances, we will use the command:
-    ```
-    aws ec2 create-key-pair --key-name ci-cd-keypair --query 'KeyMaterial' --output text> ci-cd-keypair.pem
-    ```
-    After that, it will generate the RSA PRIVATE KEY inside the ci-cd-keypair.pem:
+To create the key pair for instances, we will use the command:
+```
+aws ec2 create-key-pair --key-name ci-cd-keypair --query 'KeyMaterial' --output text> ci-cd-keypair.pem
+```
+After that, it will generate the RSA PRIVATE KEY inside the ci-cd-keypair.pem:
     
-    ![keypair](./images/keypair-cli.png)
+![keypair](./images/keypair-cli.png)
 
-    On the other hand, your key pair also appears in the AWS Console:
+On the other hand, your PUBLIC KEY appears in the AWS Console:
   
-    ![keypair-console](./images/keypair-console.png)
+![keypair-console](./images/keypair-console.png)
+
     
 - Create Security Group
-    
+A security group controls the inbound traffic that's allowed to reach the instances associated with the security group and the outbound traffic that's allowed to leave them.
+
+![security-cli](./images/security-group-cli.png)
+
+![security-console](./images/security-group-console.png)
+   
 - Create two EC2 instances
   
 ### Setting up Instances
