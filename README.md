@@ -38,7 +38,7 @@ On the other hand, your PUBLIC KEY appears in the AWS Console:
 
 A security group controls the inbound traffic that's allowed to reach the instances associated with the security group and the outbound traffic that's allowed to leave them.
 
-In this step, we will create 2 security groups for 2 instances:
+By using this command, we will create 2 security groups for 2 instances:
 
 ```
 aws ec2 create-security-group --group-name <security grp Name> --description "<Description>"
@@ -48,7 +48,18 @@ aws ec2 create-security-group --group-name <security grp Name> --description "<D
 
 
 ![security-console](./images/security-group-console.png)
-   
+
+There are 2 security groups that were not set up for the inbound traffic. Therefore, for each security group, we need to set up different rules:
+
+In the first instance:
+
+![instance1-security](./images/instance1-security.png)
+
+In the second instance:
+
+![instance2-security](./images/instance2-security.png)
+
+
 - **Create two EC2 instances**
   
 ### Setting up Instances
