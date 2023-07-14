@@ -16,7 +16,7 @@ In this project, we will use different tools such as Jenkins, SonaQube, Docker, 
 ### Create EC2 Instances
 In this step, we will use [AWS CLI](https://docs.aws.amazon.com/pdfs/cli/latest/userguide/aws-cli.pdf) to create the EC2 Instances.
 
-- Create key pair
+- **Create key pair**
 
 A key pair, consisting of a public key and a private key, is a set of security credentials that are used to prove your identity when connecting to an Amazon EC2 instance.
       
@@ -34,7 +34,7 @@ On the other hand, your PUBLIC KEY appears in the AWS Console:
 ![keypair-console](./images/keypair-console.png)
 
     
-- Create Security Group
+- **Create Security Group**
 
 A security group controls the inbound traffic that's allowed to reach the instances associated with the security group and the outbound traffic that's allowed to leave them.
 
@@ -49,7 +49,7 @@ aws ec2 create-security-group --group-name <security grp Name> --description "<D
 
 ![security-console](./images/security-group-console.png)
    
-- Create two EC2 instances
+- **Create two EC2 instances**
   
 ### Setting up Instances
   
