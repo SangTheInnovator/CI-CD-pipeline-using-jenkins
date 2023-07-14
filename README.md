@@ -14,9 +14,15 @@ In this project, we will use different tools such as Jenkins, SonaQube, Docker, 
    - Configuring Pipeline for Docker
 
   ### Create EC2 Instances
-  
+  - Create key pair
+    
+  - Create Security Group
+    
+  - Create two EC2 instances
   ### Setting up Instances
+  
   ### Integrating SonarQube for Jenkins
+  
   ### Create Jenkins for Deploying Web Application
   
 
