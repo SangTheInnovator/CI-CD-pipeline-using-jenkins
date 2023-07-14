@@ -25,7 +25,7 @@ To create the key pair for instances, we will use the command:
 aws ec2 create-key-pair --key-name <keypair-Name> --query 'KeyMaterial' --output text> <keypair-Name.pem>
 ```
 
-After that, it will generate the RSA PRIVATE KEY inside the ci-cd-keypair.pem:
+After that, it will generate the RSA PRIVATE KEY inside .pem file:
     
 ![keypair](./images/keypair-cli.png)
 
