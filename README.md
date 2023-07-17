@@ -61,6 +61,18 @@ In the second instance:
 
 
 - **Create two EC2 instances**
+
+The following command will launch the instance:
+
+```
+aws ec2 run-instances --image-id <ami-Id> --count 1 --instance-type <type> --keyname <keypair-Name> --security-groups <security grp Name>
+```
+
+After creating 2 instances, we should add the tags:
+```
+aws ec2 create-tags --resources <Instance-Id>--tags Key=Name,Value=<value>
+```
+
 ![instances-console](./images/instances-console.png)
 
 ### Setting up Instances
