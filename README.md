@@ -61,7 +61,8 @@ In the second instance:
 
 
 - **Create two EC2 instances**
-  
+![instances-console](./images/instances-console.png)
+
 ### Setting up Instances
   
 ### Integrating SonarQube for Jenkins
