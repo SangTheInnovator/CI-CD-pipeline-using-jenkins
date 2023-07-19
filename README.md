@@ -99,9 +99,9 @@ sudo apt-get install jenkins
 ```
 Copy the public IPv4 address of instance 1, paste it into your browser, and put the port number 8080. We will see:
 
-![jenkins-unlock](./images/unlock-jenkins)
+![jenkins-unlock](./images/unlock-jenkins.png)
 
-To unlock Jenkins paste the secret key to Administrator password, get secret key through this command:
+To unlock Jenkins paste the secret key to Administrator password, get the secret key through this command:
 
 ```
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
@@ -109,16 +109,19 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 After unlocking Jenkins click on "Install suggested plugins" and then provide the basic details on the "Create First Admin User" page and get to the Jenkins dashboard after completing all the required steps.
 
-![jenkins-dashboard](./images/jenkins-dashboard)
+![jenkins-dashboard](./images/jenkins-dashboard.png)
 
 
-Install Docker:
+Install Docker by using the following commands:
+
 ```
 sudo apt-get install docker.io
 ```
 
-
 - For the second instance:
+
+To install SonarQube to your instance run the following command:
+
   
 ### Integrating SonarQube for Jenkins
   
