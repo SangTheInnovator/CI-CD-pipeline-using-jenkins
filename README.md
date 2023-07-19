@@ -25,7 +25,7 @@ To create the key pair for instances, we will use the command:
 aws ec2 create-key-pair --key-name <keypair-Name> --query 'KeyMaterial' --output text> <keypair-Name.pem>
 ```
 
-After that, it will generate the RSA PRIVATE KEY inside .pem file:
+After that, it will generate the RSA PRIVATE KEY inside the .pem file:
     
 ![keypair](./images/keypair-cli.png)
 
@@ -49,7 +49,7 @@ aws ec2 create-security-group --group-name <security grp Name> --description "<D
 
 ![security-console](./images/security-group-console.png)
 
-There are 2 security groups that were not set up for the inbound traffic. Therefore, for each security group, we need to set up different rules:
+2 security groups were not set up for the inbound traffic. Therefore, for each security group, we need to set up different rules:
 
 In the first instance:
 
@@ -76,6 +76,38 @@ aws ec2 create-tags --resources <Instance-Id>--tags Key=Name,Value=<value>
 ![instances-console](./images/instances-console.png)
 
 ### Setting up Instances
+
+In this step, we will install Jenkins and Docker on 1st instance and install SonarQube on 2nd instance
+
+To install Jenkins, Docker, and SonarQube on instances, we have to ssh to your instance in your terminal by using command:
+
+```
+ssh -i <keypair.pem> ec2-user@<public-ip-v4>
+```
+
+- For the first instance:
+  
+Install Jenkins:
+```
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+```
+Copy the public IPv4 address of instance 1, paste it into your browser, and put the port number 8080. We will see:
+
+
+
+Install Docker:
+```
+sudo apt-get install docker.io
+```
+
+
+- For the second instance:
   
 ### Integrating SonarQube for Jenkins
   
