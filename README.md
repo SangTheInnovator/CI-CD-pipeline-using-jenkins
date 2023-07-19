@@ -99,6 +99,7 @@ sudo apt-get install jenkins
 ```
 Copy the public IPv4 address of instance 1, paste it into your browser, and put the port number 8080. We will see:
 
+![jenkins-unlock](./images/jenkins-unlock)
 
 
 Install Docker:
