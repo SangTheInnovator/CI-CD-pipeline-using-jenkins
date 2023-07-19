@@ -99,7 +99,17 @@ sudo apt-get install jenkins
 ```
 Copy the public IPv4 address of instance 1, paste it into your browser, and put the port number 8080. We will see:
 
-![jenkins-unlock](./images/jenkins-unlock)
+![jenkins-unlock](./images/unlock-jenkins)
+
+To unlock Jenkins paste the secret key to Administrator password, get secret key through this command:
+
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
+After unlocking Jenkins click on "Install suggested plugins" and then provide the basic details on the "Create First Admin User" page and get to the Jenkins dashboard after completing all the required steps.
+
+![jenkins-dashboard](./images/jenkins-dashboard)
 
 
 Install Docker:
