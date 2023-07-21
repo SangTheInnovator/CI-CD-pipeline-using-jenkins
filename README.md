@@ -121,8 +121,17 @@ sudo apt-get install docker.io
 - For the second instance:
 
 To install SonarQube to your instance run the following command:
+```
+sudo apt update
+sudo apt install openjdk-17-jre 
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.0.0.68432.zip
 
-  
+sudo apt install unzip -y
+unzip sonarqube-10.0.0.68432.zip
+cd /home/ubuntu/sonarqube-10.0.0.68432/bin/linux-x86-64
+./sonar.sh start
+```
+
 ### Integrating SonarQube for Jenkins
   
 ### Create Jenkins for Deploying Web Application
