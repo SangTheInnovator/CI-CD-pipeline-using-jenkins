@@ -132,9 +132,19 @@ cd /home/ubuntu/sonarqube-10.0.0.68432/bin/linux-x86-64
 ./sonar.sh start
 ```
 Copy the Public Ipv4 of SonarQube instance and paste it on the browser and use port 9000. And login with **username: admin** and **password: admin**.
-After login successfully, we will see the dashboard of sonarqube
+After login successfully, we will see the dashboard of Sonarqube
 
 ![sonar-dashboard](./images/sonarqube-dashboard.png)
+
+Click "Manually" icon. Give the name for Project key and Display name, then click Set Up button!
+
+![sonarqube-create](./images/sonarqube-create.png)
+
+After set up project, move to **My Accounts => Security => Generate Tokens**
+Create a Token for integrating with Jenkins:
+
+![sonar-tokens](./images/sonarqube-tokens.png)
+
 
 ### Integrating SonarQube for Jenkins
 
