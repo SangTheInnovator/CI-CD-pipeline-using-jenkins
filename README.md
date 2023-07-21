@@ -158,11 +158,19 @@ Return back to Jenkins Dashboard, click on **Manage Jenkins => System**, search 
 
 ![jenkins-system](./images/jenkins-system.png)
 
-On Jenkins Dashboard click on **Manage Jenkins => Tool** and search for SonarQube Scanner under it. After clicking on "Add SonarQube Scanner", give a name and check on Install automatically for its installation, and then save it.
+On Jenkins Dashboard click on **Manage Jenkins => Tool** and search for SonarQube Scanner under it. After clicking on **Add SonarQube Scanner**, give a name and check on Install automatically for its installation, and then save it.
 
 ![jenkins-tool](./images/jenkins-tools.png)
 
 
 ### Create Jenkins for Deploying Web Application
-  
+
+Now, we return back to Jenkins Dashboard, click on "Create a Job".
+
+![jenkins-dashboard](./images/jenkins-dashboard)
+
+Select the project type you want to create, then give it an item name and click **OK**
+
+![jenkins-create](./images/jenkins-create)
+
 
