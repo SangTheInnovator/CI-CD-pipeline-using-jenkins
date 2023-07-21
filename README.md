@@ -165,12 +165,12 @@ On Jenkins Dashboard click on **Manage Jenkins => Tool** and search for SonarQub
 
 ### Create Jenkins for Deploying Web Application
 
-Now, we return back to Jenkins Dashboard, click on "Create a Job".
+Now, we return back to Jenkins Dashboard, and click on **Create a Job** button.
 
-![jenkins-dashboard](./images/jenkins-dashboard)
+![jenkins-dashboard](./images/jenkins-dashboard.png)
 
 Select the project type you want to create, then give it an item name and click **OK**
 
-![jenkins-create](./images/jenkins-create)
+![jenkins-create](./images/jenkins-create.png)
 
 
