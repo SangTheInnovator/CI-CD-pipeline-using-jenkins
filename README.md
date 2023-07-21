@@ -148,6 +148,16 @@ Create a Token for integrating with Jenkins:
 
 ### Integrating SonarQube for Jenkins
 
+Now, we move to Jenkins Dashboard
+
+![jenkins-dashboard](./images/jenkins-dashboard.png)
+
+Install some plugins on Jenkins for setting up SonarQube. By clicking **Manage Jenkins => Manage Plugins => Available Plugins**. Now, in Available Plugins, search SonarQube Scanner. After selecting it then click on **Install withou restart**
+
+Return back to Jenkins Dashboard, click on **Manage Jenkins => System**, search for SonarQube servers and click **Add Sonarqube** button. Copy the Public IP of SonarQube and paste it, and put port 9000 after it in such format http://<Public IPv4>:9000 . Apply & save it:
+
+![jenkins-system](./images/jenkins-system.png)
+
 
 ### Create Jenkins for Deploying Web Application
   
