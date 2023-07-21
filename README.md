@@ -152,11 +152,15 @@ Now, we move to Jenkins Dashboard
 
 ![jenkins-dashboard](./images/jenkins-dashboard.png)
 
-Install some plugins on Jenkins for setting up SonarQube. By clicking **Manage Jenkins => Manage Plugins => Available Plugins**. Now, in Available Plugins, search SonarQube Scanner. After selecting it then click on **Install withou restart**
+Install some plugins on Jenkins for setting up SonarQube. By clicking **Manage Jenkins => Manage Plugins => Available Plugins**. Now, in Available Plugins, search SonarQube Scanner. After selecting it then click on **Install without restart**
 
-Return back to Jenkins Dashboard, click on **Manage Jenkins => System**, search for SonarQube servers and click **Add Sonarqube** button. Copy the Public IP of SonarQube and paste it, and put port 9000 after it in such format http://<Public IPv4>:9000 . Apply & save it:
+Return back to Jenkins Dashboard, click on **Manage Jenkins => System**, search for SonarQube servers, and click the **Add Sonarqube** button. Copy the Public IP of SonarQube and paste it, and put port 9000 after it in such format http://Public IPv4:9000 . Apply & save it:
 
 ![jenkins-system](./images/jenkins-system.png)
+
+On Jenkins Dashboard click on **Manage Jenkins => Tool** and search for SonarQube Scanner under it. After clicking on "Add SonarQube Scanner", give a name and check on Install automatically for its installation, and then save it.
+
+![jenkins-tool](./images/jenkins-tools.png)
 
 
 ### Create Jenkins for Deploying Web Application
