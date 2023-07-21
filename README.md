@@ -131,6 +131,10 @@ unzip sonarqube-10.0.0.68432.zip
 cd /home/ubuntu/sonarqube-10.0.0.68432/bin/linux-x86-64
 ./sonar.sh start
 ```
+Copy the Public Ipv4 of SonarQube instance and paste it on the browser and use port 9000. And login with username: admin and password: admin. 
+After login successfully, we will see the dashboard of sonarqube
+
+![sonar-dashboard](./images/sonarqube-dashboard.png)
 
 ### Integrating SonarQube for Jenkins
   
